@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import KDPublick from "./components/KDPublick";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -44,6 +45,7 @@ function App() {
           toggleMode={toggleMode}
           key={new Date()}
         />
+        <KDPublick/>
         <Alert alert={alert} />{" "}
         <Route exact path="/">
           <Home />
